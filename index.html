@@ -3,33 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escáner OCR y QR</title>
+    <title>Generador QR</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.1.1/tesseract.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Escáner OCR y Generador QR</h1>
+        <h1>Generador de Códigos QR</h1>
         
         <div class="upload-section">
             <input type="file" id="imageInput" accept="image/*">
-            <div id="preview"></div>
         </div>
 
         <div class="results-section">
-            <div class="ocr-results">
-                <h2>Texto Detectado</h2>
-                <div id="textResult"></div>
-            </div>
-            
-            <div class="barcode-results">
-                <h2>Códigos de Barras</h2>
-                <div id="barcodeList"></div>
-            </div>
-
             <div class="qr-results">
-                <h2>Códigos QR Generados</h2>
                 <div id="qrCodes"></div>
             </div>
         </div>
